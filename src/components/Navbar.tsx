@@ -9,7 +9,7 @@ export default function Navbar() {
   const links = ["about", "projects", "experience", "contact"];
 
   return (
-    <nav className="fixed top-0 left-0 w-full border-b border-[var(--border)] bg-[#081226cc] backdrop-blur-lg z-50">
+    <nav className="fixed top-0 left-0 w-full border-b border-[var(--border)] bg-[color-mix(in_oklab,var(--bg)_82%,var(--bg-soft)_18%)]/90 backdrop-blur-lg z-50">
       <div className="container flex items-center justify-between h-16">
         <Link href="/" className="font-black text-lg tracking-tight text-[var(--text)] flex items-center gap-2">
           <span className="inline-block h-2.5 w-2.5 rounded-full bg-[var(--accent)]" />
