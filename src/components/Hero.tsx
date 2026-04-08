@@ -21,15 +21,15 @@ export default function Hero() {
             Mariamawit Nejib | Full Stack Developer
           </span>
 
-          <h2 className="hero-type-line text-[clamp(0.88rem,1.05vw,1rem)]">
+          <h2 className="hero-type-line text-[clamp(0.88rem,1.05vw,1rem)] font-bold text-white">
             Problem Solver | Code Enthusiast
           </h2>
 
-          <h1 className="max-w-[19ch] text-[clamp(1.85rem,4.1vw,3rem)] leading-[1.06] tracking-[-0.01em]">
+          <h1 className="max-w-[19ch] text-[clamp(1.35rem,2.7vw,2rem)] font-extrabold leading-[1.1] tracking-[-0.01em]">
             Engineering clean products with real-world impact.
           </h1>
 
-          <p className="max-w-[56ch] text-[clamp(0.96rem,1.2vw,1.03rem)] leading-relaxed text-[var(--text-soft)]">
+          <p className="max-w-[56ch] text-[clamp(0.96rem,1.2vw,1.03rem)] font-bold leading-relaxed text-white/90">
             I am Mariamawit Nejib, a full-stack developer focused on shipping
             responsive, maintainable applications. I enjoy turning complex ideas
             into practical software that teams can trust and users can enjoy.

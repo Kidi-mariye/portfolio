@@ -50,35 +50,35 @@ export default function Experience() {
   const experienceTrack = data.filter((item) => !item.title.includes("Self-Learning"));
 
   return (
-    <section id="experience" className="section border-t border-[var(--border)] !pt-16 !pb-16 md:!pt-20 md:!pb-20">
+    <section id="experience" className="section border-t border-[var(--border)] !pt-14 !pb-14 md:!pt-18 md:!pb-18">
       <div className="mx-auto max-w-5xl">
         <p className="text-center text-[clamp(1.2rem,1.8vw,1.65rem)] font-semibold text-[var(--accent)]">My Qualification</p>
         <h2 className="mt-1 text-center text-[clamp(2rem,3.8vw,3rem)] font-bold text-[var(--text)]">Awesome Journey</h2>
 
-        <div className="mt-10 grid gap-10 md:grid-cols-2 md:gap-12">
+        <div className="mt-8 grid gap-8 md:grid-cols-2 md:gap-10">
           <div>
-            <h3 className="mb-6 text-[clamp(1.4rem,2.2vw,2rem)] font-bold text-[var(--text)]">Education</h3>
+            <h3 className="mb-5 text-[clamp(1.4rem,2.2vw,2rem)] font-bold text-[var(--text)]">Education</h3>
 
-            <div className="space-y-7">
+            <div className="space-y-5">
               {educationTrack.map((item) => (
                 <motion.article
                   key={`${item.company}-${item.period}`}
                   initial={{ opacity: 0, y: 24 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="relative rounded-[14px] border border-[var(--border)] bg-[color-mix(in_oklab,var(--bg-soft)_84%,var(--bg)_16%)] p-5"
+                  className="relative rounded-[14px] border border-[color-mix(in_oklab,var(--border)_58%,transparent)] bg-[color-mix(in_oklab,var(--bg-soft)_90%,var(--bg)_10%)] p-4.5"
                 >
-                  <span className="absolute -left-[11px] top-6 h-5 w-5 rounded-full border-2 border-[var(--bg)] bg-[var(--accent)]" />
-                  <span className="absolute -left-[1px] top-11 h-[calc(100%-2.4rem)] w-[2px] bg-[color-mix(in_oklab,var(--accent)_62%,transparent)]" />
+                  <span className="absolute -left-[11px] top-5.5 h-5 w-5 rounded-full border-2 border-[var(--bg)] bg-[var(--accent)]" />
+                  <span className="absolute -left-[1px] top-10 h-[calc(100%-2.1rem)] w-[2px] bg-[color-mix(in_oklab,var(--accent)_52%,transparent)]" />
 
-                  <h4 className="text-[clamp(1.18rem,1.7vw,1.42rem)] font-bold text-[var(--text)]">{item.title}</h4>
-                  <p className="mt-1 text-[0.98rem] text-[var(--text-soft)]">{item.company}</p>
-                  <p className="mt-1 text-[0.92rem] font-semibold text-[var(--accent)]">{item.period}</p>
+                  <h4 className="text-[clamp(1.12rem,1.55vw,1.34rem)] font-bold text-[var(--text)]">{item.title}</h4>
+                  <p className="mt-0.5 text-[0.95rem] text-[var(--text-soft)]">{item.company}</p>
+                  <p className="mt-1 text-[0.9rem] font-semibold text-[var(--accent)]">{item.period}</p>
 
-                  <ul className="mt-4 space-y-2.5 text-[0.94rem] leading-relaxed text-[var(--text-soft)]">
+                  <ul className="mt-3.5 space-y-2 text-[0.92rem] leading-relaxed text-[var(--text-soft)]">
                     {item.highlights.map((highlight) => (
                       <li key={highlight} className="flex gap-2.5">
-                        <span className="mt-[0.55rem] h-1.5 w-1.5 flex-none rounded-full bg-[var(--accent)]" />
+                        <span className="mt-[0.5rem] h-1.5 w-1.5 flex-none rounded-full bg-[var(--accent)]" />
                         <span>{highlight}</span>
                       </li>
                     ))}
@@ -89,28 +89,28 @@ export default function Experience() {
           </div>
 
           <div>
-            <h3 className="mb-6 text-[clamp(1.4rem,2.2vw,2rem)] font-bold text-[var(--text)]">Experience</h3>
+            <h3 className="mb-5 text-[clamp(1.4rem,2.2vw,2rem)] font-bold text-[var(--text)]">Experience</h3>
 
-            <div className="space-y-7">
+            <div className="space-y-5">
               {experienceTrack.map((item) => (
                 <motion.article
                   key={`${item.company}-${item.period}`}
                   initial={{ opacity: 0, y: 24 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="relative rounded-[14px] border border-[var(--border)] bg-[color-mix(in_oklab,var(--bg-soft)_84%,var(--bg)_16%)] p-5"
+                  className="relative rounded-[14px] border border-[color-mix(in_oklab,var(--border)_58%,transparent)] bg-[color-mix(in_oklab,var(--bg-soft)_90%,var(--bg)_10%)] p-4.5"
                 >
-                  <span className="absolute -left-[11px] top-6 h-5 w-5 rounded-full border-2 border-[var(--bg)] bg-[var(--accent)]" />
-                  <span className="absolute -left-[1px] top-11 h-[calc(100%-2.4rem)] w-[2px] bg-[color-mix(in_oklab,var(--accent)_62%,transparent)]" />
+                  <span className="absolute -left-[11px] top-5.5 h-5 w-5 rounded-full border-2 border-[var(--bg)] bg-[var(--accent)]" />
+                  <span className="absolute -left-[1px] top-10 h-[calc(100%-2.1rem)] w-[2px] bg-[color-mix(in_oklab,var(--accent)_52%,transparent)]" />
 
-                  <h4 className="text-[clamp(1.18rem,1.7vw,1.42rem)] font-bold text-[var(--text)]">{item.title}</h4>
-                  <p className="mt-1 text-[0.98rem] text-[var(--text-soft)]">{item.company}</p>
-                  <p className="mt-1 text-[0.92rem] font-semibold text-[var(--accent)]">{item.period}</p>
+                  <h4 className="text-[clamp(1.12rem,1.55vw,1.34rem)] font-bold text-[var(--text)]">{item.title}</h4>
+                  <p className="mt-0.5 text-[0.95rem] text-[var(--text-soft)]">{item.company}</p>
+                  <p className="mt-1 text-[0.9rem] font-semibold text-[var(--accent)]">{item.period}</p>
 
-                  <ul className="mt-4 space-y-2.5 text-[0.94rem] leading-relaxed text-[var(--text-soft)]">
+                  <ul className="mt-3.5 space-y-2 text-[0.92rem] leading-relaxed text-[var(--text-soft)]">
                     {item.highlights.map((highlight) => (
                       <li key={highlight} className="flex gap-2.5">
-                        <span className="mt-[0.55rem] h-1.5 w-1.5 flex-none rounded-full bg-[var(--accent)]" />
+                        <span className="mt-[0.5rem] h-1.5 w-1.5 flex-none rounded-full bg-[var(--accent)]" />
                         <span>{highlight}</span>
                       </li>
                     ))}
