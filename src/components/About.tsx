@@ -42,7 +42,7 @@ export default function About() {
         <p className="text-[clamp(1.3rem,1.8vw,1.65rem)] font-semibold text-[var(--accent)]">My Intro</p>
         <h2 className="mt-1 text-[clamp(2rem,4.1vw,3rem)] font-bold text-[var(--text)]">About Me</h2>
 
-        <div className="mt-8 max-w-[72ch] space-y-4 text-[clamp(1.05rem,1.6vw,1.9rem)] leading-[1.72] text-[var(--text-soft)]">
+        <div className="mt-8 max-w-[72ch] space-y-4 text-[clamp(1.05rem,1.6vw,1.9rem)] font-semibold leading-[1.72] text-[color-mix(in_oklab,var(--text-soft)_72%,var(--text)_28%)]">
           <p>
             Hello! I&apos;m Mariamawit Nejib, a university student and full-stack developer
             passionate about solving problems through code. My developer journey began when
